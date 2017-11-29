@@ -1,0 +1,96 @@
+/*main*/
+#main{
+    margin:-10px 0 10px 0;
+    overflow:hidden;
+}
+#main div.hand{
+    text-align: center;
+    /*font-size:18px;*/
+}
+div.hand h1{
+    font-size:29px;
+}
+div.hand>p{
+    margin:10px 15px 0 0;
+    font-size:15px;
+    line-height: 18px;
+}
+
+.aside-lf .hand>p span{
+    margin-right:15px;
+    color:#19A566;
+}
+
+.con>img{
+    width:500px;
+    margin: 10px auto;
+}
+div.con p{
+    margin:5px 0 10px 0;
+    font-size:16px;
+    line-height:26px;
+}
+div.con p{
+    padding-left:200px;
+    padding-right:160px;
+}
+div.twapp{
+    overflow: hidden;
+    width:1000px;
+    background-color:#FCFDC7;
+    margin:20px 0 0 170px;
+}
+div.twapp>div.enjoy{
+    margin:6px 0 0px 0;
+    font-size:17px;
+    line-height:26px;
+}
+p.line{
+    display:inline-block;
+    width:1000px;
+    height:2px;
+    /*background:#BFB705;*/
+    background:#DDDDDD;
+}
+div.twapp>div.cyenjoy>ul>li{
+    float:left;
+    margin:20px 30px 30px 90px;
+}
+div.cyenjoy>ul>li>p{
+    font-size:13px;
+    margin-top:10px;
+}
+
+/*上一页，下一页*/
+div.side{
+    display:block;
+}
+.pre{
+    display:block;
+    height:95px;
+    width:90px;
+    position:fixed;
+    left:10%;
+    top:40%;
+    background:url("../img/arrow.png") 20px -3px no-repeat;
+}
+.pre:hover{
+    background:url("../img/arrow.png") 20px -100px no-repeat;
+}
+.nxt{
+    display:block;
+    height:95px;
+    width:90px;
+    position:fixed;
+    right:8%;
+    top:40%;
+    background:url("../img/arrow.png") -60px -3px  no-repeat;
+}
+.nxt:hover{
+    background:url("../img/arrow.png") -60px -100px no-repeat;
+}
+
+
+
+
+

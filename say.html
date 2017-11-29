@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Saying</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/nav-common.css">
+    <link rel="stylesheet" href="css/say.css">
+    <style>
+        ul>li>a>span{
+            font:24px '楷体';
+        }
+    </style>
+</head>
+<body>
+<div style="min-width:1349px">
+    <div calss="header">
+    <p class="logo">
+        <!--Maoxiaoliu @.Blog-->
+        <img src="img/logo2.png">
+    </p>
+    <div>
+        <ul class="list">
+            <li>
+                <a href="index.html">
+                    <span>首页</span>
+                    <span class="en">Head</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <span>关于我</span>
+                    <span class="en">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="life.html">
+                    <span>爱生活</span>
+                    <span class="en">Life</span>
+                </a>
+            </li>
+            <li>
+                <a href="learn.html">
+                    <span>学无止境</span>
+                    <span class="en">Learn</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="active">留言板</span>
+                    <span class="en">Saying</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="nav">
+    <a href="index.html" class="one">网站首页</a>
+    <a href="#" class="two">留言板</a>
+    <span><img src="img/2.png">思念不重，像一整个秋天的落叶.</span>
+    <div class="line clear"></div>
+</div>
+    <div class="main">
+        <div class="book-lf">
+            <div class="mainframe">
+                <div class="message">主人寄语</div>
+                <div class="info">
+                    博学之，审问之，慎思之，明辨之，笃行之。——《礼记》
+                </div>
+                <div class="content" contenteditable="true"></div>
+                <input type="button" name="submit" value="发表" class="subbtn">
+                <div class="numofmessage">留言(0)</div>
+                <!-- 下面是留言区 -->
+                <div class="msgFrame">
+                      <!--<div class="content_1">-->
+                          <!--<img class="name" src="" alt="photo">-->
+                          <!--<div class="mainInfo">-->
+                              <!--<div class="userId"><a href="#">用户名</a></div>-->
+                              <!--<div class="conInfo">-->
+                                    <!--这是一条留言。-->
+                                 <!--</div>-->
+                              <!--<div class="time">2016-12-19  23:46:11</div>-->
+                         <!--</div>-->
+
+                </div>
+            </div>
+        </div>
+        <div class="book-rg">
+            <p>网名：猫小六  | forever love</p>
+            <p>姓名：毛诗男</p>
+            <p>联系方式：18855991214</p>
+            <p>籍贯：安徽省-宿州市</p>
+            <p>现居：安徽省-合肥市</p>
+            <p>职业：web前端开发</p>
+            <p>喜欢的书：《何以笙箫默》《平凡的世界》</p>
+            <p>喜欢的音乐:《当》《水墨丹青》</p>
+            <a href="#">
+                <img src="img/11.jpg">
+            </a>
+        </div>
+    </div>
+    <div class="footer clear">
+        <div class="fline"></div>
+        <div class="design">
+            <!--<p>Design By maoxiaoliu</p>-->
+            <img src="img/logo3.png">
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+    //接下来储存留言数据
+    var count=0;
+    $(".subbtn").click(function(){
+        var text= $(".content").text();
+        var time=getCurrentTime();
+        if(text==""){
+            alert("您还没有输入任何内容！");
+        }else{
+//            var auto=parseInt(Math.random()*100);
+            loadmessage(text,"向日葵",time);
+            count++;
+            console.log('success!');
+            $(".content").text("");
+            $(".numofmessage").text("留言("+count+")");
+        }
+    })
+    function loadmessage(message,id,time){
+        //创建content_index
+        //包含img.name + mainInfo
+        //.userId .conInfo .time
+        var contentDiv='<div class="content_1">';
+        contentDiv+='<img class="name" src="img/5.gif" alt="photo">';
+        contentDiv+='<div class="mainInfo">'
+        contentDiv+=' <div class="userId"><a href="#">';
+        contentDiv+=id;
+        contentDiv+='</a></div> <div class="conInfo">';
+        contentDiv+=message;
+        contentDiv+='</div> <div class="time">';
+        contentDiv+=time;
+        contentDiv+='</div> </div> </div>'
+        $(".msgFrame").prepend(contentDiv);
+    }
+    function getCurrentTime(){
+        var today=new Date();
+        var y=today.getFullYear();
+        var mh=today.getMonth();//得到的月份是实际月份-1
+        mh++;//所以+1得到正确的月份
+        var d=today.getDate();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m)
+        s=checkTime(s)
+        var time=y+"-"+mh+"-"+d+"  "+h+":"+m+":"+s;
+        return time;
+    }
+    function checkTime(i){
+        if(i<10)
+            i="0"+i
+        return i
+    }
+</script>
+</body>
+</html>

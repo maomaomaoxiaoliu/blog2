@@ -1,0 +1,68 @@
+
+/*main*/
+div.mian{
+    overflow: hidden;
+}
+/*×ó±ß*/
+div.aside-left{
+    float:left;
+    width: 930px;
+    overflow: hidden;
+    background:url(../img/rline.jpg) repeat-y right;
+    margin:10px 0;
+}
+div.newblog h2{
+    font-size:18px;
+    margin:10px 0 5px 150px;
+}
+p.dateview{
+    margin:0px 0 5px 150px;
+    font-size:12px;
+}
+p.dateview span{
+    margin:0 10px 0 0;
+}
+p.dateview span a{
+    color:#63B120;
+}
+figure img{
+    width: 170px;
+    height: 120px;
+    float:left;
+    border:#EAE6E7 1px solid;
+    padding:4px;
+    margin-left:120px;
+}
+div.nlist{
+    width:560px;
+    float:left;
+    line-height:1.9;
+}
+div.nlist p {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+a.readmore{
+    display:inline-block;
+    width:100px;
+    height:30px;
+    font-size:14px;
+    background:#f90;
+    color:#fff;
+    text-align:center;
+    margin:20px 0px 0 450px;
+}
+div.line{
+    overflow:hidden;
+    margin-left:145px;
+    width:82%;
+    height:20px;
+    border-bottom:1px dashed #ccc;
+}
+
+
+
+
+
+

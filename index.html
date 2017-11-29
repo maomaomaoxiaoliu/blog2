@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>猫小六 </title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+   <style>
+	  .error{
+		  color:red;
+	  }
+	  .right{
+		  color:green;
+	  }
+      a:focus{
+          text-decoration: none;
+      }
+       ul>li>a>span{
+           font-family:'楷体';
+       }
+  </style>
+   </head>
+ <body>
+   <div class="container"  style="min-width:1140px">
+       <!-- 广告-->
+        <div class="bg">
+           <!--广告图片-->
+            <div class="ad">
+               <img src="img/boke1.png">
+               <!--按钮-->
+               <a href="#" class="ctrl">
+                   <img src="img/cuo1.png"  style="width:28px;height:28px">
+               </a>
+            </div>
+       </div>
+    <!-- 头部-->
+     <div>
+          <div class="logo">
+            <img src="img/an1.gif">
+            <!--Maoxiaoliu @.Blog-->
+              <img src="img/logo1.png" style="width:306px;height:56px">
+          </div>
+         <div>
+            <ul class="list list-inline">
+                 <li>
+                      <a href="#">
+                       <span class="active">首页</span>
+                       <span class="en">Head</span>
+                      </a>
+                 </li>
+                 <li>
+                      <a href="about.html">
+                       <span>关于我</span>
+                       <span class="en">About</span>
+                      </a>
+                 </li>
+                 <li>
+                      <a href="life.html">
+                       <span>爱生活</span>
+                       <span class="en">Life</span>
+                      </a>
+                 </li>
+                 <li>
+                      <a href="learn.html">
+                       <span>学无止境</span>
+                       <span class="en">Learn</span>
+                      </a>
+                 </li>
+                  <li>
+                        <a href="say.html">
+                            <span>留言板</span>
+                            <span class="en">Saying</span>
+                        </a>
+                    </li>
+             </ul>
+         </div>
+           <div style="font:12px '微软雅黑';margin-top:35px;margin-left:20px; float:left">
+               <a  href="#modal-login" data-toggle="modal">登录 |</a>
+               <a  href="#modal-register" data-toggle="modal">注册</a>
+           </div>
+     </div>
+    <!-- 图片轮播-->
+     <div id="ad" class="carousel clear" data-ride="carousel" data-interval="2000" data-pause="null">
+       <!--必需:轮播广告的滚动的内容-->
+       <div class="carousel-inner">
+           <div class="item active">
+              <img src="img/banner0.jpg" style="height:330px;">
+           </div>
+           <div class="item">
+              <img src="img/banner1.jpg" style="height:330px;">
+           </div>
+           <div class="item">
+              <img src="img/banner2.jpg" style="height:330px;">
+           </div>
+           <div class="item">
+              <img src="img/banner3.jpg" style="height:330px;">
+           </div>
+       </div>
+        <!--上一页/下一页-->
+        <a href="#ad" class="carousel-control left" data-slide="prev">
+           <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#ad" class="carousel-control right" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <!--分页页码-->
+        <ul class="carousel-indicators">
+          <li data-slide-to="0" data-target="#ad" class="active"></li>
+          <li data-slide-to="1" data-target="#ad"></li>
+          <li data-slide-to="2" data-target="#ad"></li>
+          <li data-slide-to="3" data-target="#ad"></li>
+        </ul>
+
+     </div>
+       <!-- 个人作品展示-->
+     <div  id="banner">
+         <div id="banner-title">
+             <h3><p><span>个人作品 </span> show
+                 <marquee direction="left" class="rt" style="color:#05e9e2;position:absolute; min-width:815px;right: 170px;">
+                     我就是我，颜色不一样的烟火。
+                 </marquee>
+             </p>
+             </h3>
+         </div>
+         <div id="banner-body" class="sph carousel slide" data-ride="carousel" data-interval="3000">
+             <div class="sph carousel-inner">
+				 <div class="spbq">
+					 <div class="border border_1"></div>
+					 <div class="border border_2"></div>
+					 <div class="border border_3"></div>
+					 <div class="border border_4"></div>
+					 <a href="view/view.html" target="_blank">
+						 <div class="zst item">
+							 <img src="img/9.jpg">
+						 </div>
+						 <h2>醉美风景</h2>
+						 <span>青山浮水，倒影翩翩</span>
+					 </a>
+					 <div class="text_gobuy">
+						 <br/>
+						 <p>Bootstrap、Jquery</p>
+						 <br/>
+					 </div>
+				 </div>
+                 <div class="spbq">
+                     <div class="border border_1"></div>
+                     <div class="border border_2"></div>
+                     <div class="border border_3"></div>
+                     <div class="border border_4"></div>
+                     <a href="food.html" target="_blank">
+                         <div class="zst item">
+                             <img src="img/food.png">
+                         </div>
+                         <h2>醉爱eating~~</h2>
+                         <span>人间至味是清欢</span>
+                     </a>
+                     <div class="text_gobuy">
+                         <br/>
+                         <p>Bootstrap响应式</p>
+                         <br/>
+                     </div>
+                 </div>
+                 <div class="spbq">
+                     <div class="border border_1"></div>
+                     <div class="border border_2"></div>
+                     <div class="border border_3"></div>
+                     <div class="border border_4"></div>
+                     <a href="only/only.html" target="_blank">
+                         <div class="zst item">
+                             <img src="only/img/only_11.png">
+                         </div>
+                         <h2>Only女装</h2>
+                         <span>让Only带你走进新时尚</span>
+                     </a>
+                     <div class="text_gobuy">
+                         <br/>
+                         <p>HTML、CSS</p>
+                         <br/>
+                     </div>
+                 </div>
+                 <div class="spbq">
+                     <div class="border border_1"></div>
+                     <div class="border border_2"></div>
+                     <div class="border border_3"></div>
+                     <div class="border border_4"></div>
+                     <a href="about.html">
+                         <div class="zst item">
+                             <img src="img/10.jpg">
+                         </div>
+                         <h2>关于Me</h2>
+                         <span>My world!</span>
+                     </a>
+                     <div class="text_gobuy">
+                         <br/>
+                         <p>About &nbsp;&nbsp;Me</p>
+                         <br/>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+       <!-- 文章推荐-->
+     <div class="nav">
+         <h2>
+             <p>
+                 <span>文章</span>
+                 <span>推荐</span>
+             </p>
+         </h2>
+     </div>
+       <!-- 文章-->
+     <div>
+           <div class="left" style="float:left">
+               <div class="article">
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/web.jpg" alt="如果要学习web前端开发，需要学习什么?"/>
+                         <span>
+                             遇到很多新手，都会问，学习web前端开发，需要学习什么？难不难？多久能入门？怎么能快速建一个网站？工资能拿到多少？还有些让我推荐
+                            一些培训机构什么的要去学习。我建议是自学，实在觉得自己没有这个能力，确实是需要一个老师的话，那你还是自己做主找个老师吧！
+                            <a href="learnOne.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2017-09-09</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/banner-header-3.png" alt="柠檬绿兔小白个人博客模板"/>
+                         <span>
+                             展示的是首页html，博客页面布局格式简单，没有复杂的背景，色彩局部点缀，动态的幻灯片展示，切换卡，标签云...此作品设计图作者窦耀宇
+                            <a href="learnOne_lemon.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2017-07-14</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/1_131201.jpg" alt="成长，就是不断地挣扎与折腾"/>
+                         <span>
+                              她，开着几百万的玛莎利蒂在中州路奔驰，银行贷款却有一百万，挣扎在生与死的边缘。　她，天天开比亚迪上下班，却还在为几十万的房贷发愁，生活在水生火热之中。
+                            <a href="learnTwo.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2017-04-10</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/timg.jpg" alt="说给昨天的今天的明天的我们自己"/>
+                         <span>
+                            如果有来生，要做一棵树，站成永恒，没有悲欢的姿势。一半在尘土里安详，一半的风力飞扬，一半洒落阴凉，一半沐浴阳光。
+                            如果有来生，要做一只飞鸟，飞越永恒，没有迷途的苦恼。东方有火红的希望，南方有温暖的巢床，向西逐退残阳，向北唤醒芬芳。
+                            <a href="learnTwo_other.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2017-04-01</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/11-130.jpg" alt="换一个角度，换一种活法"/>
+                         <span>
+                             有这样一段对话：老和尚问小和尚：如果你跨前一步是死，退后一步是亡，你怎么办？小和尚毫不犹豫地说：我往旁边去。
+                            <a href="learnThree.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2017-03-08</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/1_112.jpg" alt="当年华未曾老去"/>
+                         <span>
+                            恣意奔波挥洒的青春，色彩斑斓的美好年华。当岁月无情划过，内心满是惆怅。孤独的灵魂，总爱寻找“空山星雨后，天气晚来秋”的慰藉。虽在奔跑，却依旧留恋，不舍。一个人行走，总会对过往的选择怀抱些许遗憾。
+                            <a href="learnThree_other.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2017-01-12</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/zhanan.jpg" alt="渣男的最后胜利"/>
+                         <span>
+                             电影开篇就以男主角的口吻说出人生中运气的重要，如果有人相信运气，那么他一定已经参透了人生。努力工作很重要，但我觉得每个人都害怕承认运气有多重要。
+                            <a href="learnFour.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2016-09-07</span>
+                   </ul>
+                   <ul class="arrow_box">
+                       <div class="sy">
+                           <p>
+                               <img src="img/2_111.jpg" alt="亲爱的"/>
+                         <span>
+                             《亲爱的》大概看哭了不少观众，但看过电影后，却会发现，那不仅仅是一部苦情催泪片。有些悲，不一定让人落泪，但那种沉重会直戳心灵；有些希望，不一定让人开怀大笑，但总会有一丝阳光不经意地落在眉梢。《亲爱的》就是这样一部电影。就像黄渤说的.........
+                            <a href="learnFour.html">阅读全文</a>
+                         </span>
+
+                           </p>
+                       </div>
+                       <span class="dateview">2016-05-16</span>
+                   </ul>
+               </div>
+               <a id="add">加载更多</a>
+           </div>
+
+       </div>
+    <!-- 尾部-->
+    <div class="footer clear">
+        <div class="fline"></div>
+        <div class="design">
+            <!--<p>Design By maoxiaoliu</p>-->
+            <img src="img/logo3.png">
+        </div>
+    </div>
+    <!-- 登录模态框-->
+   <div class="modal fade" id="modal-login">
+	   <div class="modal-dialog modal-sm">
+		   <div class="modal-content">
+			   <div class="modal-header">
+				   <span class="close" data-dismiss="modal">×</span>
+				   <h4 class="modal-title">用户登录</h4>
+			   </div>
+			   <div class="modal-body">
+				   <form class="form-horizontal" action="index.php" method="post" >
+					   <div class="form-group">
+						   <div class="col-sm-3">
+							   <label class="control-label" for="uname">用户名</label>
+						   </div>
+						   <div class="col-sm-9">
+							   <input type="text" id="uname" name="uname" class="form-control" placeholder="请输入用户名"/>
+						   </div>
+					   </div>
+					   <div class="form-group">
+						   <div class="col-md-9 col-sm-offset-2" id="tips1">
+
+						   </div>
+					   </div>
+					   <div class="form-group">
+						   <div class="col-sm-3">
+							   <label class="control-label" for="upwd">密码</label>
+						   </div>
+						   <div class="col-sm-9">
+							   <input type="password" id="upwd" name="upwd" class="form-control" placeholder="请输入密码"/>
+						   </div>
+					   </div>
+					   <div class="form-group">
+						   <div class="col-md-9 col-sm-offset-2" id="tips2">
+
+						   </div>
+					   </div>
+					   <div class="form-group">
+						   <div class="col-sm-9 col-sm-offset-1">
+							   <div class="checkbox">
+								   <label>
+									   <input type="checkbox"/>七天免密登录
+								   </label>
+							   </div>
+						   </div>
+					   </div>
+					   <div class="form-group">
+						   <div class="col-sm-9 col-sm-offset-3">
+							   <a href="index.html" target="_self" class="btn btn-success" id="btn">登录</a>
+							   <a href="javascript:;"  class="btn btn-danger" id="cancel">重置</a>
+						   </div>
+					   </div>
+				   </form>
+			   </div>
+		   </div>
+	   </div>
+   </div>
+	<!-- 注册模态框 -->
+	<div class="modal fade" id="modal-register">
+		<div class="modal-dialog modal-sm">
+		   <div class="modal-content">
+			   <div class="modal-header">
+				   <span class="close" data-dismiss="modal">×</span>
+				   <h4 class="modal-title">用户注册</h4>
+			   </div>
+			   <div class="modal-body">
+				   <form class="form-horizontal" id="form1" method="post" >
+					   <div class="form-group">
+						   <div class="col-sm-3">
+							   <label class="control-label" for="uname">用户名</label>
+						   </div>
+						   <div class="col-sm-9">
+							   <input type="text" id="uname1" name="uname1" class="form-control" placeholder="请输入用户名"/>
+							   <span id="span"></span>
+						   </div>
+					   </div>
+					   <!-- <div class="form-group">
+					   						   <div class="col-md-9 col-sm-offset-2" id="tips11">
+					   
+					   						   </div>
+					   </div> -->
+					   <div class="form-group">
+						   <div class="col-sm-3">
+							   <label class="control-label" for="upwd">设置密码</label>
+						   </div>
+						   <div class="col-sm-9">
+							   <input type="password" id="upwd1" name="upwd1" class="form-control" placeholder="请输入密码"/>
+						   </div>
+					   </div>
+					  <!--  <div class="form-group">
+					   						   <div class="col-md-9 col-sm-offset-2" id="tips22">
+					   
+					   						   </div>
+					   </div> -->
+					   <div class="form-group">
+						   <div class="col-sm-3">
+							   <label class="control-label" for="upwd">确认密码</label>
+						   </div>
+						   <div class="col-sm-9">
+							   <input type="password" id="upwd2" name="upwd2" class="form-control" placeholder="请确认密码"/>
+							   <span id="span1"></span>
+						   </div>
+					   </div>
+					   <!-- <div class="form-group">
+					   						   <div class="col-md-9 col-sm-offset-2" id="tips23">
+					   
+					   						   </div>
+					   </div> -->
+					   <div class="form-group">
+						   <div class="col-sm-9 col-sm-offset-3">
+							   <a href="index.html" target="_self" class="btn btn-success" id="register">注册</a>
+							   <a href="javascript:;"  class="btn btn-danger" id="cancel1">重置</a>
+						   </div>
+					   </div>
+				   </form>
+			   </div>
+		   </div>
+	   </div>
+	</div>
+   </div>
+   <script src="js/jquery.js"></script>
+   <script src="js/index_login.js"></script>
+   <script src="js/index_register.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/jquery-ui.js"></script>
+   <script src="js/bootlint.js"></script>
+   <script>
+       //广告
+       var bg=document.querySelector(".bg");
+       //按钮
+       var ctrl=document.querySelector(".ctrl");
+       ctrl.onclick=function(e){
+           e.preventDefault();
+           bg.style.display="none";
+           ctrl.style.display="none";
+       }
+   </script>
+   <script type="text/javascript">
+       //边框效果--移入
+       function border(obj){
+           $(obj).find('.border_1').stop(true).animate({
+               height:'305px'
+           },300);
+           $(obj).find('.border_2').stop(true).delay(300).animate({
+               width:'200px'
+           },300);
+           $(obj).find('.border_3').stop(true).animate({
+               height:'305px'
+           },300);
+           $(obj).find('.border_4').stop(true).delay(300).animate({
+               width:'200px'
+           },300)
+       }
+       //边框效果--移出
+       function border1(obj){
+
+           $(obj).find('.border_1').stop(true).delay(100).animate({
+               height:'0px'
+           },150);
+           $(obj).find('.border_2').stop(true).animate({
+               width:'0px'
+           },150);
+           $(obj).find('.border_3').stop(true).delay(100).animate({
+               height:'0px'
+           },150);
+           $(obj).find('.border_4').stop(true).animate({
+               width:'0px'
+           },150)
+       }
+       //触发
+       $('.spbq').hover(
+               function () {
+                   var obj = $(this);
+                   $(obj).find('.text_gobuy').addClass('text_gobuy_show');
+                   border(obj);
+               },
+               function () {
+                   var obj = $(this);
+                   $(obj).find('.text_gobuy').removeClass('text_gobuy_show');
+                   border1(obj);
+               }
+       );
+   </script>
+   <!--<script>-->
+   <!--bootlint.showLintReportForCurrentDocument([]);-->
+   <!--</script>-->
+ </body>
+</html>

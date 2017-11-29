@@ -1,0 +1,62 @@
+
+
+
+
+/*main*/
+div.book-lf>h2{
+    /*margin-top:40px;*/
+    font:22px  '宋体';
+    font-weight:900;
+    margin-bottom:25px;
+}
+div.book-lf{
+    float:left;
+    margin-left:150px;
+    width:60%;
+    background: url(../img/rline.jpg) repeat-y right;
+    text-indent:2em;
+}
+div.book-lf>div>p{
+    margin-bottom:25px;
+    line-height:22px;
+    /*text-align:center;*/
+    margin-right:18px;
+    font-size:13px;
+}
+
+div.book-rg{
+    float:left;
+    margin-left:35px;
+}
+div.book-rg>p:nth-child(1){
+    padding-top:30px;
+}
+div.book-rg>p{
+    color: #999;
+    line-height: 26px;
+}
+div.book-rg>a>img{
+    margin-bottom:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

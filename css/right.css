@@ -1,0 +1,145 @@
+/*×ó±ß*/
+div.aside-left{
+    float:left;
+    width: 930px;
+    overflow: hidden;
+    background:url(../img/rline.jpg) repeat-y right;
+    margin:10px 0;
+}
+h2.c-title{
+    font-size:22px;
+    text-align:center;
+    font-family:'¿¬Ìå';
+    margin-bottom:20px;
+}
+.box_c{
+    border:#ccc 1px dashed;
+    text-align: center;
+    padding:5px 0;
+    margin:0 40px 0 160px;
+    color:#999;
+}
+.box_c span{
+    margin-right:20px;
+}
+div.infos{
+    overflow:hidden;
+    margin:20px 30px 20px 160px;
+    line-height:28px;
+    font-size:14px;
+    text-indent:2em;
+    color:#666;
+}
+.keybq{
+    background:url(../img/6264.png) no-repeat 10px center #f8f8f8;
+    line-height:30px;
+    height:30px;
+    padding-left:40px;
+    margin:0 30px 0 160px;
+}
+.keybq span{
+    color:#099;
+}
+.nextinfo{
+    line-height:24px;
+    margin-left:160px;
+}
+
+
+
+
+
+
+
+/*ÓÒ±ß*/
+.aside-right{
+    float:left;
+    width:300px;
+    margin-left:30px;
+    position:relative;
+    overflow:hidden;
+}
+#kw{
+    width:165px;
+    height:25px;
+    margin-left:5px;
+}
+.navs{
+    width:300px;
+    overflow:hidden;
+    /*opacity:0;*/
+    display:none;
+}
+.nav1{
+    position:fixed;
+    width:300px;
+}
+.navs h2,.nav1 h2{
+    background:url(../img/6167.png) no-repeat left top #fff;
+    font-size:16px;
+    line-height:30px;
+    padding-left: 40px;
+    margin:10px 0 10px 0;
+}
+.navs,.nav1{
+    margin-bottom:10px;
+}
+.navs ul li,.nav1 ul li{
+    float:left;
+    width:120px;
+    background:#93A589;
+    text-align:center;
+    height:40px;
+    line-height:38px;
+    margin:0 5px 5px 0;
+    border:1px solid #ccc;
+}
+
+.news{
+    margin-top:150px;
+    overflow:hidden;
+    width:300px;
+}
+.news h3,.ph h3{
+    font-size:15px;
+    margin-bottom:18px;
+}
+p.line{
+    height:2px;
+    width:200px;
+    background:#CCCCCE;
+    margin:-10px 0 0 65px;
+}
+.news span{
+    color:#65b020;
+}
+.ph span{
+    color:#37ccca;
+}
+div.news ul{
+    margin-bottom:20px;
+}
+.rank li{
+    height:25px;
+    line-height:25px;
+    clear:both;
+    overflow:hidden;
+    padding-left:15px;
+    background:url(../img/li.jpg) no-repeat left center;
+}
+.paih {
+    background: url(../img/ph.jpg) no-repeat left 4px;
+    margin: 10px 0;
+}
+.paih li {
+    line-height: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding-left: 24px;
+    border-bottom: #CCC dotted 1px;
+}
+.visitors h3{
+    height:230px;
+    width:70px;
+    font-size:15px;
+}
